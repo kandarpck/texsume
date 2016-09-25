@@ -12,4 +12,4 @@ A one page resume created for professional use. Nothing fancy. No colors, highli
 
 ###License
 
-MIT License. Built on the amazing work by Sourabh Bajaj. ![Link](https://github.com/sb2nov/resume)
+MIT License. Built on the amazing work by Sourabh Bajaj. [Link](https://github.com/sb2nov/resume)
