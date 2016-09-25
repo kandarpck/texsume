@@ -9,23 +9,23 @@
 
 % Set the text height and width and the margins such that the page is almost full. 
 \usepackage[empty]{fullpage}
-
+% Hide ugly borderes around links
+\usepackage[hidelinks]{hyperref}
+% Set the default font
 \usepackage{times}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
+% Pretty bulleting
 \usepackage{verbatim}
 \usepackage{enumitem}
 
 % Some standard packages
-\usepackage[pdftex,
-	           pdfauthor={Kandarp Khandwala},
-		pdftitle={Resume}]
-		{hyperref}
+\usepackage[pdftex,pdfauthor={Kandarp Khandwala},pdftitle={Kandarp_Khandwala_Resume}]{hyperref}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
@@ -80,6 +80,10 @@
 
 %-------------------------------------------
 \begin{document}
+
+%-----------HEADERS-----------------
+\centerline{\LARGE{Kandarp Khandwala}}
+\centerline{\normalsize{Mumbai, India | +91 9969961993 | \href{mailto:kandarpck@gmail.com}{kandarpck@gmail.com} | \href{http://kandarpck.appspot.com/}{kandarpck.appspot.com} | \href{https://github.com/kandarpck}{Github - kandarpck}}}
 
 %-----------EDUCATION-----------------
 \section{Education}
