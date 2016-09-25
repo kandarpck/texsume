@@ -5,12 +5,17 @@
 % Modified By: Kandarp Khandwala
 %-------------------------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 % Set the text height and width and the margins such that the page is almost full. 
 \usepackage[empty]{fullpage}
-% Turn off the indentation and add inter-paragraph spacing. 
-\usepackage{parskip}
+
+\usepackage{times}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
 
 % Some standard packages
 \usepackage[pdftex,
@@ -25,9 +30,54 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 
 %-------------------------------------------
 \begin{document}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vivekanand Institute of Technology}{Mumbai, India}
+      {Bachelor of Engineering in Computer Engineering;  Score: 68.2\%}{Jul. 2011 -- May. 2015}
+  \resumeSubHeadingListEnd
+
+
 
 Lorem ipsum dolor sit amet, sit cu dicant voluptua. Fabellas disputando ex qui. Ne mazim delicata duo. Cu sit nibh possit. Vivendum phaedrum principes id his. Cum eruditi repudiare ei.
 
