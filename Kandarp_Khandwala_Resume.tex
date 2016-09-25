@@ -5,7 +5,7 @@
 % Modified By: Kandarp Khandwala
 %-------------------------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 % Set the text height and width and the margins such that the page is almost full. 
 \usepackage[empty]{fullpage}
@@ -24,7 +24,7 @@
 		{hyperref}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
@@ -44,15 +44,15 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[3]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \textit{\small #3} \\
+      \textit{\small#2}  \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -60,10 +60,10 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{1pt}\setlength{\parskip}{2pt}\setlength{\parsep}{2pt}}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0em}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 
 %-------------------------------------------
@@ -73,15 +73,45 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Vivekanand Institute of Technology}{Mumbai, India}
+      {Vivekanand Institute of Technology}
       {Bachelor of Engineering in Computer Engineering;  Score: 68.2\%}{Jul. 2011 -- May. 2015}
   \resumeSubHeadingListEnd
 
 
-
-Lorem ipsum dolor sit amet, sit cu dicant voluptua. Fabellas disputando ex qui. Ne mazim delicata duo. Cu sit nibh possit. Vivendum phaedrum principes id his. Cum eruditi repudiare ei.
-
-Lorem ipsum dolor sit amet, sit cu dicant voluptua. Fabellas disputando ex qui. Ne mazim delicata duo. Cu sit nibh possit. Vivendum phaedrum principes id his. Cum eruditi repudiare ei.
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JPMorgan Chase Co.}
+      {Application Developer - Fixed Income Risk and PnL}{Jul. 2015 - Present}
+      \resumeItemListStart
+         \resumeItem{Batch Split}
+          {Improved resiliency and performance by splitting one End of Day Fixed Income risk batch into separate batches by products thereby reducing Priority 1 issues by 33\% and improving overall timing by over an hour.}
+        \resumeItem{DePnl}
+          {Single handedly decommissioned American Bond Options from a legacy system onto a strategic platform saving million dollars a year in licensing costs.}
+        \resumeItem{Secured Lending}
+          {Interacted with traders and middle office to automate high value Lending and Collateral transactions, reducing the turnaround time from days to minutes. }
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Gray Routes}
+      {Summer Intern}{Summer 2014}
+      \resumeItemListStart
+        \resumeItem{Intelligent Systems}
+          {Developed innovative solutions for last-mile delivery and logistics by combining Location Services with a simple Neural Network for efficient inventory management, reduced manual processing and optimized route prediction.}
+      \resumeItemListEnd
+      
+     \resumeSubheading
+      {Stupidsid}
+      {Developer Intern}{Summer 2013 and 2015}
+      \resumeItemListStart
+        \resumeItem{Application Scaling}
+          {Redesigned and migrated the back-end application architecture and API services, leading to a sustained 3x increase in web traffic over the year while also reducing costs by half}
+        \resumeItem{Mobile First}
+          {Pioneered the design and development of the Android applications which marked a significant shift in company ideology to a mobile-first platform before the competition.}
+      \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
