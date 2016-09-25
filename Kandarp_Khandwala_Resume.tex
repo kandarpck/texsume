@@ -9,8 +9,6 @@
 
 % Set the text height and width and the margins such that the page is almost full. 
 \usepackage[empty]{fullpage}
-% Hide ugly borderes around links
-\usepackage[hidelinks]{hyperref}
 % Set the default font
 \usepackage{times}
 \usepackage{titlesec}
@@ -21,7 +19,7 @@
 \usepackage{enumitem}
 
 % Some standard packages
-\usepackage[pdftex,pdfauthor={Kandarp Khandwala},pdftitle={Kandarp_Khandwala_Resume}]{hyperref}
+\usepackage[hidelinks,pdfauthor={Kandarp Khandwala},pdftitle={Kandarp_Khandwala_Resume}]{hyperref}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -81,9 +79,8 @@
 %-------------------------------------------
 \begin{document}
 
-%-----------HEADERS-----------------
-\centerline{\LARGE{Kandarp Khandwala}}
-\centerline{\normalsize{Mumbai, India | +91 9969961993 | \href{mailto:kandarpck@gmail.com}{kandarpck@gmail.com} | \href{http://kandarpck.appspot.com/}{kandarpck.appspot.com} | \href{https://github.com/kandarpck}{Github - kandarpck}}}
+\centerline{\Large{Kandarp Khandwala}}
+\centerline{\normalsize{Mumbai, India \textbar{} +91 9969961993 \textbar{} \href{mailto:kandarpck@gmail.com}{kandarpck@gmail.com} \textbar{} \href{http://kandarpck.appspot.com/}{kandarpck.appspot.com} \textbar{} \href{https://github.com/kandarpck}{Github - kandarpck}}}
 
 %-----------EDUCATION-----------------
 \section{Education}
