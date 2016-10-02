@@ -26,8 +26,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{2.5in}
 
 \raggedbottom
 \raggedright
@@ -35,8 +35,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-11pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 
 %-------------------------
@@ -56,24 +56,24 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #3} \\
       \textit{\small#2}  \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\projectHeading}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{2pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{1.5pt}\setlength{\parskip}{1pt}\setlength{\parsep}{1pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0pt}\setlength{\parskip}{-1pt}\setlength{\parsep}{0pt}}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{2pt}}
+\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=*]\setlength\itemsep{.5pt}}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
 
@@ -83,12 +83,15 @@
 \centerline{\Large{Kandarp Khandwala}}
 \centerline{\normalsize{\href{mailto:kandarpck@gmail.com}{kandarpck@gmail.com} \textbar{} +919969961993 \textbar{} \href{http://kandarpck.appspot.com/}{kandarpck.appspot.com} \textbar{} \href{https://github.com/kandarpck}{Github: kandarpck} \textbar{} \href{https://www.linkedin.com/in/kandarpkhandwala}{LinkedIn: kandarpkhandwala}}}
 
+%\centerline{\Large{Jane Doe}}
+%\centerline{\normalsize{\href{mailto:jane@gmail.com}{jane@gmail.com} \textbar{} +91122454747 \textbar{} \href{http://jane.appspot.com/}{jane.appspot.com} \textbar{} \href{https://github.com/jane}{Github: jane} \textbar{} \href{https://www.linkedin.com/in/jane}{LinkedIn: jane}}}
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Vivekanand Institute of Technology}
-      {Bachelor of Engineering in Computer Engineering;  Score: 68.2\%}{Jul. 2011 -- May. 2015}
+      {Vivekanand Institute of Technology, Mumbai University}
+      {Bachelor of Engineering in Computer Engineering;  Aggregate: 68.2\%}{Jul. 2011 -- May. 2015}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -101,9 +104,9 @@
          \resumeItem{Batch Split}
           {Delivered improved resiliency and performance by splitting one End of Day Fixed Income risk batch into separate batches divided by products thereby reducing Priority 1 issues by 33\% and improving overall timing by over an hour.}
         \resumeItem{DePnl}
-          {Spearheaded the technical efforts to decommission American Bond Options from a legacy system onto a strategic platform saving million dollars a year in licensing costs.}
+          {Spearheaded the technical efforts to migrate PnL calculations for Bond Options onto a strategic platform by writing market data frameworks, pricing models and efficient reconciliation. This reduced licensing costs by million dollars a year.}
         \resumeItem{Secured Lending}
-          {Interacted with traders and orchestrated automation of high value Lending and Collateral transactions, shortening the turnaround time from days to minutes. }
+          {Interacted with traders and orchestrated development of a comprehensive suite of five applications for high value Lending and Collateral transactions, shortening the turnaround time from days to minutes.}
       \resumeItemListEnd
       
     \resumeSubheading
@@ -111,7 +114,7 @@
       {Summer Intern}{Summer 2014}
       \resumeItemListStart
         \resumeItem{Intelligent Systems}
-          {Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services with a simple Neural Network for efficient inventory management, reduced manual processing and optimized route prediction.}
+          {Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services with a simple Neural Network for efficient inventory management and optimized route prediction.}
       \resumeItemListEnd
       
      \resumeSubheading
@@ -121,7 +124,7 @@
         \resumeItem{Application Scaling}
           {Revamped the back-end application architecture and API services, leading to a sustained 3x increase in web traffic over the year while also slashing costs to half.}
         \resumeItem{Mobile First}
-          {Pioneered the design and development of Android applications which empowered the startup to adopt a distinguished path and triumph over the competition.}
+          {Pioneered the design and development of Android applications which empowered the startup to adopt a distinguished strategy and triumph over the competition.}
       \resumeItemListEnd
     
 \resumeSubHeadingListEnd
@@ -130,20 +133,20 @@
 \section{Projects}
   \resumeSubHeadingListStart
     
-    \projectHeading{Magic Bus - Walk for Good}{Oct. 15 - Apr. 16} 
+    \projectHeading{Walk for Good - A Technology for Social Good Initiative}{Oct. 15 - Apr. 16} 
     \resumeItemListStart
-      \projectItem{Engineered an application ecosystem providing the user with custom fitness functionality and easy passive monitoring of metrics like time, speed and distance while working out.}
+      \projectItem{Solved technical challenges for an NGO by engineering an application ecosystem providing the user with custom fitness functionality and easy passive monitoring of metrics like time, speed and distance while working out.}
      \resumeItemListEnd
    
    \projectHeading{Personalized Search Engine and Mobile Assistant}{Aug. 14 - Mar. 15} 
     \resumeItemListStart
-      \projectItem{Programmed a small-scale search engine which delivers high quality, efficient search results and context aware customized information based on the user's current likes and likelihood of future preferences.}
+      \projectItem{Programmed a small-scale search engine by extending Apache Solr, delivering high quality, efficient search results and context aware customized information based on the user's current likes and likelihood of future preferences.}
      \resumeItemListEnd
    
    \projectHeading{Dynamic Context Aware Traffic System Optimization}{Jan. 14 - May. 14} 
     \resumeItemListStart
-      \projectItem{Proposed algorithmic changes after statistical analyses on vehicular traffic data leading to 15\% traffic efficiency improvement in simulated environments.}
-      \projectItem{Nominated as the best departmental project. Picked among top ten ideas from 600 national entries at All India Science and Engineering Contest organized by KPIT.}
+      \projectItem{Proposed algorithmic changes after statistical analyses on vehicular traffic data leading to 15\% traffic efficiency improvement.}
+      \projectItem{Nominated as the best departmental project. Picked among top ten ideas from 600 national entries at 'All India Science and Engineering' Contest organized by KPIT.}
      \resumeItemListEnd
 
    \projectHeading{Road Bump Data Analysis using Automated Real Time Data Stream to Big Query}{Jun. 14 - Jul. 14} 
@@ -151,52 +154,57 @@
       \projectItem{Created a data pipeline processor that managed the entire ETL process on Road Bump data collected using mobile sensors delivering an optimized route to transport cheaply.}
      \resumeItemListEnd
    
-   \projectHeading{Fuzzy Searching}{Dec. 13 - Jan. 14} 
-    \resumeItemListStart
-      \projectItem{Optimized approximate matching auto-complete search in PostgreSQL.}
-     \resumeItemListEnd
-   
    \projectHeading{Faculty Feedback Assessment Module}{Jun. 13 - Jun. 14} 
     \resumeItemListStart
-      \projectItem{Engaged with college management, faculty and students to gather, analyze and distill requirements for developing a web based Student Information System integrated with a faculty assessment module.}
-      \projectItem{Focused on data collection, cleaning and visualization to deliver an online application to support report summarization and dashboarding of faculty performance using Google Visualization with the idea of providing insights for decision making during faculty appraisal process.}
-     \resumeItemListEnd
-    
+      \projectItem{Engaged with college management, faculty and students while focusing on data collection, cleaning and visualization to deliver a web application to support report summarization and dashboarding of faculty performance providing insights for decision making during faculty appraisal process.}
+    \resumeItemListEnd
+   
   \resumeSubHeadingListEnd
 
 %-----HONORS AND AWARDS-------
 \section{Honors and Awards}
   \resumeSubHeadingListStart
-    \resumeSubItem{Hackathon - 1st Prize}
-      {J.P. Morgan Code for Good Hackathon}
-    \resumeSubItem{Hackathon - 2nd Prize}
-      {Google Developers Group World Hackathon}
     \resumeSubItem{Top Thinker}
-      {Award for the 6 most impactful employees among 150 analysts joining J.P. Morgan}
+      {Award for the 6 most impactful employees among 150 analysts joining JPMorgan (2015)}
+    \resumeSubItem{Hackathon - 1st Prize, JPMorgan}
+      {Among 120 competitors selected from 20 colleges (2014)}
+    \resumeSubItem{Hackathon - 2nd Prize, Google Developers Group }
+      {World Hackathon among 30 participating teams (2014)}
     \resumeSubItem{Academic Scholarship}
-      {Awarded scholarship for excellence in the field of Computer Science funding one year of education}
+      {Awarded scholarship for excellence in the field of Computer Science funding one year of education(2011)}
+  \resumeSubHeadingListEnd
+
+%--------PUBLICATIONS------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Context Aware Dynamic Traffic Signal Optimization}
+      {Khandwala K, Sharma R, and Rao S. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253}
+  \resumeSubHeadingListEnd
+
+%--------LEADERSHIP------------
+\section{Leadership and Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Campus Ambassador}
+      {Part of the campus recruitment team at JPMorgan, interacting with alma mater and ensuring high recruitment standards (2016)}
+      \resumeSubItem{Technical Judge and Subject Matter Expert}
+      {Provided technical expertise and judged solutions at the Code for Good Hackathon, JPMorgan (2016)}
+      \resumeSubItem{Event Planner and Technical Team}
+      {Brainstormed ideas, planned events and build technical solutions for `Indian Society for Technical Education'. (2012-14)}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \small{\item{
-      {Python, Django}
+      {Python, Pandas, Django}
       \hfill{Java, Android}
-      \hfill{HTML, CSS, Qt}
-      \hfill{PostgreSQL, SQLite}
+      \hfill{TensorFlow, Scikit-Learn}
       \hfill{AWS, GCE}
-      \hfill{Elasticsearch, Solr, Scikit-Learn}
+      \hfill{Elasticsearch, Solr}
+      \hfill{Git, PostgreSQL, \LaTeX}
+      
     }}
   \resumeSubHeadingListEnd
-
-%--------PUBLICATIONS------------
-\section{Publication}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Context Aware Dynamic Traffic Signal Optimization}
-      {Cornell - arXiv and International Journal of Computer Applications}
-  \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
