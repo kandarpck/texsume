@@ -1,5 +1,5 @@
 %-------------------------------------------
-% Resume in Latex
+% Resume in LaTeX
 % Original Author : Sourabh Bajaj
 % License : MIT
 % Modified By: Kandarp Khandwala
@@ -41,6 +41,11 @@
 
 %-------------------------
 % Custom commands
+
+%%%%%%%% TODO %%%%%%%%
+% Clean up custom commands %
+%%%%%%%%%%%%%%%%%%%%
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2}
@@ -51,12 +56,17 @@
   \item\small{#1}}
 
 
-\newcommand{\resumeSubheading}[3]{
+\newcommand{\resumeSubheadingOld}[3]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #3} \\
       \textit{\small#2}  \\
     \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubheading}[3]{
+	\vspace{-1pt}\item
+	\textbf{#2} - \textbf{#1} \hfill \textit{#3}
 }
 
 \newcommand{\projectHeading}[2]{
@@ -67,7 +77,10 @@
 }
 
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{2pt}}
+\newcommand{\resumeSubItem}[2]{
+	\vspace{2pt}\item
+	\textbf{#1}: {#2}
+}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -81,7 +94,7 @@
 \begin{document}
 
 \centerline{\Large{Kandarp Khandwala}}
-\centerline{\normalsize{Mumbai, India \textbar{} \href{mailto:kandarpck@gmail.com}{kandarpck@gmail.com} \textbar{} +919969961993 \textbar{} \href{https://github.com/kandarpck}{Github: kandarpck} }}
+\centerline{\normalsize{Baltimore, MD \textbar{} \href{mailto:kandarp.k@jhu.edu}{kandarp.k@jhu.edu} \textbar{} +1 (443) 763-9251 \textbar{} \href{https://github.com/kandarpck}{Github: kandarpck} }}
 \centerline{\normalsize{\href{http://kandarpck.appspot.com/}{Website: kandarpck.appspot.com}  \textbar{} \href{https://www.linkedin.com/in/kandarpkhandwala}{LinkedIn: linkedin.com/in/kandarpkhandwala}}}
 
 %\centerline{\Large{Jane Doe}}
@@ -90,17 +103,30 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bachelor of Engineering in Computer Engineering}
-      {Vivekanand Institute of Technology, Mumbai University;  Aggregate: 68.1\%; Major: 70.6\%}{Jul. 11 - May. 15}
+  \resumeSubheadingOld
+  {Masters in Computer Science}
+  {Johns Hopkins University}{Starting Aug. 17}
+    \resumeSubheadingOld
+      {Bachelors in Computer Engineering}
+      {Mumbai University;  GPA: 70.6\%}{Jul. 11 - May. 15}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+  \resumeSubheading
+  		{IDIES at Johns Hopkins University}
+  		{Graduate Research Assistant}{Aug. 17 - Present}
+  	\resumeItemListStart
+  		\resumeItem{Deep Learning}
+  			{Analyzing raw galaxy images, identifying and accurately predicting the type of galaxy observed. Generating a realistic simulated universe and also performing predictive analysis on the simulated data. http://idies.jhu.edu}
+  \resumeItemListEnd
+  
+  
     \resumeSubheading
       {JPMorgan Chase Co.}
-      {Application Developer - Fixed Income Risk and PnL}{Jul. 15 - Present}
+      {Application Developer - Fixed Income Risk and PnL}{Jul. 15 - Jun. 17}
       \resumeItemListStart
          \resumeItem{Batch Split}
           {Delivered improved resiliency and performance by splitting one End of Day Fixed Income risk batch into separate batches divided by products thereby reducing Priority 1 issues by 33\% and improving overall timing by over an hour.}
@@ -117,16 +143,20 @@
         \resumeItem{Intelligent Systems}
           {Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services with a Kohonen Neural Network for efficient inventory management and optimized route prediction.}
       \resumeItemListEnd
+
+%-----------Extra Experience-----------------
       
-     \resumeSubheading
-      {Stupidsid}
-      {Developer Intern}{Summer 13 and 15}
-      \resumeItemListStart
-        \resumeItem{Application Scaling}
-          {Revamped the back-end application architecture and API services, leading to a sustained 3x increase in web traffic over the year while also slashing costs to half.}
-        \resumeItem{Mobile First}
-          {Pioneered the design and development of Android applications which empowered the startup to adopt a distinguished strategy and triumph over the competition.}
-      \resumeItemListEnd
+%     \resumeSubheading
+%      {Stupidsid}
+%      {Developer Intern}{Summer 13 and 15}
+%     \resumeItemListStart
+%        \resumeItem{Application Scaling}
+%          {Revamped the back-end application architecture and API services, leading to a sustained 3x increase in web traffic over the year while also slashing costs to half.}
+%       \resumeItem{Mobile First}
+%          {Pioneered the design and development of Android applications which empowered the startup to adopt a distinguished strategy and triumph over the competition.}
+%      \resumeItemListEnd
+ 
+%------------------------------------------------
     
 \resumeSubHeadingListEnd
 
