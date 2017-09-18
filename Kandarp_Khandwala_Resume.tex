@@ -35,8 +35,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-11pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 
 %-------------------------
@@ -47,7 +47,7 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \vspace{-0.5pt} \item\small{
     \textbf{#1}{: #2}
   }
 }
@@ -56,24 +56,24 @@
   \item\small{#1}}
 
 
-\newcommand{\resumeSubheadingOld}[3]{
+\newcommand{\resumeSubheadingOld}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #3} \\
-      \textit{\small#2}  \\
-    \end{tabular*}\vspace{-2pt}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#2} & \textit{\small#3} \\
+    \end{tabular*}
 }
 
 \newcommand{\resumeSubheading}[3]{
-	\vspace{-1pt}\item
+	\item
 	\textbf{#2} - \textbf{#1} \hfill \textit{#3}
 }
 
 \newcommand{\projectHeading}[2]{
-  \vspace{-1pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-2pt}
+    \end{tabular*}\vspace{-1pt}
 }
 
 
@@ -86,7 +86,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0pt}\setlength{\parskip}{-1pt}\setlength{\parsep}{0pt}}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=*]\setlength\itemsep{.5pt}}
+\newcommand{\resumeItemListStart}{\vspace{-1pt}\begin{itemize}[leftmargin=*]\setlength\itemsep{.5pt}}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
 
@@ -104,11 +104,11 @@
 \section{Education}
   \resumeSubHeadingListStart
   \resumeSubheadingOld
-  {Masters in Computer Science}
-  {Johns Hopkins University}{Starting Aug. 17}
+  {Masters in Computer Science - Johns Hopkins University}
+  {Coursework: Natural Language Processing, Practical Cryptographic Systems.}{Aug. 17 - Dec 18}{Baltimore, MD}
     \resumeSubheadingOld
-      {Bachelors in Computer Engineering}
-      {Mumbai University;  GPA: 70.6\%}{Jul. 11 - May. 15}
+      {Bachelors in Computer Engineering - Mumbai University;  GPA: 70.6\%}
+      {Coursework: Algorithms, Operating Systems, Advanced Computer Networks, Artificial Intelligence, Image Processing}{Jul. 11 - May. 15}{Mumbai, India.}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -161,7 +161,7 @@
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Projects and Publications}
   \resumeSubHeadingListStart
     
     \projectHeading{Walk for Good - A Technology for Social Good Initiative}{Oct. 15 - Apr. 16} 
