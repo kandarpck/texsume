@@ -57,7 +57,7 @@
 
 
 \newcommand{\resumeSubheadingOld}[4]{
-  \vspace{-1pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #4} \\
       \textit{\small#2} & \textit{\small#3} \\
@@ -66,7 +66,7 @@
 
 \newcommand{\resumeSubheading}[3]{
 	\item
-	\textbf{#2} - \textbf{#1} \hfill \textit{#3}
+	\textbf{#2} \textbar{} \textbf{#1} \hfill \textit{#3}
 }
 
 \newcommand{\projectHeading}[2]{
@@ -104,11 +104,11 @@
 \section{Education}
   \resumeSubHeadingListStart
   \resumeSubheadingOld
-  {Masters in Computer Science - Johns Hopkins University}
-  {Coursework: Natural Language Processing, Practical Cryptographic Systems.}{Aug. 17 - Dec 18}{Baltimore, MD}
+  {Masters in Computer Science \textbar{} Johns Hopkins University}
+  {Coursework: Natural Language Processing, Practical Cryptographic Systems.}{Aug. 17 - Dec 18 (expected)}{Baltimore, MD}
     \resumeSubheadingOld
-      {Bachelors in Computer Engineering - Mumbai University;  GPA: 70.6\%}
-      {Coursework: Algorithms, Operating Systems, Advanced Computer Networks, Artificial Intelligence, Image Processing}{Jul. 11 - May. 15}{Mumbai, India.}
+      {Bachelors in Computer Engineering \textbar{} Mumbai University \textbar{} GPA: 70.6\%}
+      {Coursework: Algorithms, Operating Systems, Data Mining, Advanced Computer Networks, Artificial Intelligence}{Jul. 11 - May. 15}{Mumbai, India.}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -116,17 +116,17 @@
   \resumeSubHeadingListStart
   
   \resumeSubheading
-  		{IDIES at Johns Hopkins University}
+  		{Johns Hopkins University \textbar{} \textit{\href{http://idies.jhu.edu}{idies.jhu.edu}}}
   		{Graduate Research Assistant}{Aug. 17 - Present}
   	\resumeItemListStart
   		\resumeItem{Deep Learning}
-  			{Analyzing raw galaxy images, identifying and accurately predicting the type of galaxy observed. Generating a realistic simulated universe and also performing predictive analysis on the simulated data. http://idies.jhu.edu}
+  			{Analyzing raw galaxy images, identifying and accurately predicting the type of galaxy observed. Generating a realistic simulated universe and also performing predictive analysis on the simulated data.}
   \resumeItemListEnd
   
   
     \resumeSubheading
       {JPMorgan Chase Co.}
-      {Application Developer - Fixed Income Risk and PnL}{Jul. 15 - Jun. 17}
+      {Software Engineer \textbar{} Fixed Income Risk and PnL}{Jul. 15 - Jun. 17}
       \resumeItemListStart
          \resumeItem{Batch Split}
           {Delivered improved resiliency and performance by splitting one End of Day Fixed Income risk batch into separate batches divided by products thereby reducing Priority 1 issues by 33\% and improving overall timing by over an hour.}
@@ -141,7 +141,7 @@
       {Summer Intern}{Summer 14}
       \resumeItemListStart
         \resumeItem{Intelligent Systems}
-          {Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services with a Kohonen Neural Network for efficient inventory management and optimized route prediction.}
+          {Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services and Machine Learning for efficient inventory management and optimized route prediction.}
       \resumeItemListEnd
 
 %-----------Extra Experience-----------------
@@ -160,15 +160,24 @@
     
 \resumeSubHeadingListEnd
 
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\small{\item{
+		{Python, Pandas, Django}
+		\hfill{Java, Android}
+		\hfill{TensorFlow, Scikit-Learn}
+		\hfill{AWS, GCE}
+		\hfill{Elasticsearch, Solr}
+		\hfill{Git, PostgreSQL, \LaTeX}
+		
+}}
+\resumeSubHeadingListEnd
+
 %-----------PROJECTS-----------------
 \section{Projects and Publications}
   \resumeSubHeadingListStart
     
-    \projectHeading{Walk for Good - A Technology for Social Good Initiative}{Oct. 15 - Apr. 16} 
-    \resumeItemListStart
-      \projectItem{Solved technical challenges for an NGO by engineering an application ecosystem providing the user with custom fitness functionality and easy passive monitoring of metrics like time, speed and distance while working out.}
-     \resumeItemListEnd
-   
    \projectHeading{Personalized Search Engine and Mobile Assistant}{Aug. 14 - Mar. 15} 
     \resumeItemListStart
       \projectItem{Programmed a small-scale search engine by extending Apache Solr, delivering high quality, efficient search results and context aware customized information based on the user's current likes and likelihood of future preferences.}
@@ -178,6 +187,7 @@
     \resumeItemListStart
       \projectItem{Proposed algorithmic changes after statistical analyses on vehicular traffic data leading to 15\% traffic efficiency improvement.}
       \projectItem{Nominated as the best departmental project. Picked among top ten ideas from 600 national entries at 'All India Science and Engineering' Contest organized by KPIT.}
+      \projectItem{The findings for this research were published in IJERT arXiv:1407.5212 (2014). doi: 10.5120/17586-8253 \textit{Aug. 14}}
      \resumeItemListEnd
 
    \projectHeading{Road Bump Data Analysis using Automated Real Time Data Stream to Big Query}{Jun. 14 - Jul. 14} 
@@ -185,10 +195,16 @@
       \projectItem{Created a data pipeline processor that managed the entire ETL process on Road Bump data collected using mobile sensors delivering an optimized route to transport cheaply.}
      \resumeItemListEnd
    
-   \projectHeading{Faculty Feedback Assessment Module}{Jun. 13 - Jun. 14} 
-    \resumeItemListStart
-      \projectItem{Engaged with college management, faculty and students while focusing on data collection, cleaning and visualization to deliver a web application to support report summarization and dashboarding of faculty performance providing insights for decision making during faculty appraisal process.}
-    \resumeItemListEnd
+   \projectHeading{URL and Web Log Analysis}{Jun. 13 - Jun. 14} 
+   \resumeItemListStart
+   \projectItem{Performed a security audit by building a user interface to view significant trends quickly by analyzing Apache logs which include the client IP address, URL, response code, response size, etc.}
+   \resumeItemListEnd
+   
+   \projectHeading{Walk for Good - A Technology for Social Good Initiative}{Oct. 15 - Apr. 16} 
+   \resumeItemListStart
+   \projectItem{Built an application with custom fitness functionality and easy passive monitoring using mobile sensors, displaying metrics like time, speed and distance while working out.}
+   \projectItem{Volunteered to build and manage the technology stack for an NGO which in turn helped 250,000 children in poverty.}
+   \resumeItemListEnd
    
   \resumeSubHeadingListEnd
 
@@ -200,42 +216,41 @@
     \resumeSubItem{Hackathon - 1st Prize, JPMorgan} 
       {Among 120 competitors selected from 20 colleges.}\hfill \textit{Jul. 14}
     \resumeSubItem{Hackathon - 2nd Prize, Google Developers Group}
-      {World Hackathon among 30 participating teams.} \hfill \textit{Oct. 14}
+      {World Hackathon among 30 participating teams.}\hfill \textit{Oct. 14}
     \resumeSubItem{Academic Scholarship}
-      {Funding one year of education for excellence in the field of Computer Science.}\hfill \textit{Jun. 11}
+      {Funding one year of education for excellence in the field of Computer Science.} \hfill \textit{Jun. 11}
   \resumeSubHeadingListEnd
 
 %--------PUBLICATIONS------------
-\section{Publications}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Context Aware Dynamic Traffic Signal Optimization.}
-      {Khandwala K, Sharma R, and Rao S. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253}\hfill \textit{Aug. 14}
-  \resumeSubHeadingListEnd
+%\section{Publications}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{Context Aware Dynamic Traffic Signal Optimization.}
+%      {Khandwala K, Sharma R, and Rao S. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253}\hfill \textit{Aug. 14}
+%  \resumeSubHeadingListEnd
 
 %--------LEADERSHIP------------
 \section{Leadership and Involvement}
   \resumeSubHeadingListStart
-    \resumeSubItem{Campus Ambassador}
-      {Part of the campus recruitment team at JPMorgan, interacting with alma mater and ensuring high recruitment standards.} \hfill \textit{Oct. 15 - Nov. 16}
-      \resumeSubItem{Technical Judge and Subject Matter Expert}
-      {Provided technical expertise and judged solutions at the Code for Good Hackathon, JPMorgan.} \hfill \textit{Jul. 16 - Jul. 16}
-      \resumeSubItem{Event Planner and Technical Team}
-      {Brainstormed ideas, planned events and build technical solutions for `Indian Society for Technical Education'.} \hfill \textit{Jul. 12 - Jul. 14}
-  \resumeSubHeadingListEnd
+    
+    \projectHeading{Campus Ambassador \textbar{} JPMorgan Chase \& Co.}{Oct. 15 - Nov. 16}
+    \resumeItemListStart
+    \projectItem{Part of the campus recruitment team, interacting with alma mater and ensuring high recruitment standards.}
+    \projectItem{Delivered 3 sessions to 500 students for the recruitment drive of 2016.}
+    \resumeItemListEnd
+    
+    \projectHeading{Technical Judge and Subject Matter Expert \textbar{} JPMorgan Code for Good Hackathon}{Jul. 16 - Jul. 16}
+    \resumeItemListStart
+    \projectItem{Provided technical expertise as a Subject Matter Expert for Git, Android, and AWS.}
+    \projectItem{Evaluated 20 solutions based on technical prowess and implementation.}
+    \resumeItemListEnd
+    
+    \projectHeading{Event Planner and Technical Team \textbar{} Indian Society for Technical Education}{Jul. 12 - Jul. 14}
+    \resumeItemListStart
+    \projectItem{Incharge of the Mobile and Web strategy. Built games like Virtual Stock Market Trading which garnered 20000 hits}
+    \resumeItemListEnd
+    
+	\resumeSubHeadingListEnd
 
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \small{\item{
-      {Python, Pandas, Django}
-      \hfill{Java, Android}
-      \hfill{TensorFlow, Scikit-Learn}
-      \hfill{AWS, GCE}
-      \hfill{Elasticsearch, Solr}
-      \hfill{Git, PostgreSQL, \LaTeX}
-      
-    }}
-  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
