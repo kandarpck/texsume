@@ -35,7 +35,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
+  \vspace{-11pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 
@@ -57,9 +57,10 @@
 
 
 \newcommand{\resumeSubheadingOld}[4]{
+	\vspace{1pt}
   \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #4} \\
+      \large{\textbf{#1}} & \textit{\small #4} \\
       \textit{\small#2} & \textit{\small#3} \\
     \end{tabular*}
 }
@@ -72,7 +73,7 @@
 \newcommand{\projectHeading}[2]{
   \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
+      \large{\textbf{#1}} & \textit{\small #2} \\
     \end{tabular*}\vspace{-1pt}
 }
 
@@ -93,7 +94,7 @@
 %-------------------------------------------
 \begin{document}
 
-\centerline{\Large{Kandarp Khandwala}}
+\centerline{\LARGE{Kandarp Khandwala}}
 \centerline{\normalsize{Baltimore, MD \textbar{} \href{mailto:kandarp.k@jhu.edu}{kandarp.k@jhu.edu} \textbar{} +1 (443) 763-9251 \textbar{} \href{https://github.com/kandarpck}{Github: kandarpck} }}
 \centerline{\normalsize{\href{http://kandarpck.appspot.com/}{Website: kandarpck.appspot.com}  \textbar{} \href{https://www.linkedin.com/in/kandarpkhandwala}{LinkedIn: linkedin.com/in/kandarpkhandwala}}}
 
@@ -104,41 +105,39 @@
 \section{Education}
   \resumeSubHeadingListStart
   \resumeSubheadingOld
-  {Masters in Computer Science \textbar{} Johns Hopkins University, Baltimore, MD}
+  {Masters in Computer Science \textbar{} Johns Hopkins University \textit{\small Baltimore, MD}}
   {Coursework: Natural Language Processing, Practical Cryptographic Systems.}{}{Aug. 17 - Dec 18 (expected)}
     \resumeSubheadingOld
-      {Bachelors in Computer Engineering \textbar{} Mumbai University, India}
-      {Coursework: Algorithms, Operating Systems, Data Mining, Advanced Computer Networks, Artificial Intelligence}{Jul. 11 - May. 15}{GPA: 70.6\%}
+      {Bachelors in Computer Engineering \textbar{} Mumbai University \textit{\small India}}
+      {Coursework: Algorithms, Operating Systems, Data Mining, Advanced Computer Networks, Artificial Intelligence.}{Jul. 11 - May. 15}{GPA: 3.61}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
   
-  \resumeSubheading
-  		{Johns Hopkins University \textbar{} \textit{\href{http://idies.jhu.edu}{idies.jhu.edu}}}
-  		{Graduate Research Assistant}{Aug. 17 - Present}
+  \projectHeading
+  		{Graduate Research Assistant \textbar{} Johns Hopkins University \textbar{} \textit{\small \href{http://idies.jhu.edu}{idies.jhu.edu}}}{Aug. 17 - Present}
   	\resumeItemListStart
   		\resumeItem{Deep Learning}
-  			{Analyzing raw galaxy images, identifying and accurately predicting the type of galaxy observed. Generating a realistic simulated universe and also performing predictive analysis on the simulated data.}
+  			{Analyzing raw galaxy images, identifying and accurately predicting the type of galaxy observed. Generating a realistic simulated universe and performing predictive analysis on the simulated data.}
   \resumeItemListEnd
   
   
-    \resumeSubheading
-      {JPMorgan Chase Co.}
-      {Software Engineer \textbar{} Fixed Income Risk and PnL}{Jul. 15 - Jun. 17}
+    \projectHeading
+      {Software Engineer \textbar{} JPMorgan Chase Co. \textbar{} \textit{\small Credit Risk and Profit and Loss(PnL)}}
+     {Jul. 15 - Jun. 17}
       \resumeItemListStart
          \resumeItem{Batch Split}
-          {Delivered improved resiliency and performance by splitting one End of Day Fixed Income risk batch into separate batches divided by products thereby reducing Priority 1 issues by 33\% and improving overall timing by over an hour.}
+          {Improved resiliency and performance of the End of Day(EOD) Fixed Income risk batch which  reduced Priority 1 issues by 33\% and improved overall timing by one hour.}
         \resumeItem{DePnl}
           {Spearheaded the technical efforts to migrate PnL calculations for Bond Options onto a strategic platform by writing market data frameworks, pricing models and efficient reconciliation. This reduced licensing costs by million dollars a year.}
         \resumeItem{Secured Lending}
           {Interacted with traders and orchestrated development of a comprehensive suite of five applications for high value Lending and Collateral transactions, shortening the turnaround time from days to minutes.}
       \resumeItemListEnd
       
-    \resumeSubheading
-      {Gray Routes}
-      {Summer Intern}{Summer 14}
+    \projectHeading{Summer Intern \textbar{} Gray Routes}
+      {Jun. 14 - Aug 14}
       \resumeItemListStart
         \resumeItem{Intelligent Systems}
           {Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services and Machine Learning for efficient inventory management and optimized route prediction.}
@@ -187,7 +186,7 @@
     \resumeItemListStart
       \projectItem{Proposed algorithmic changes after statistical analyses on vehicular traffic data leading to 15\% traffic efficiency improvement.}
       \projectItem{Nominated as the best departmental project. Picked among top ten ideas from 600 national entries at 'All India Science and Engineering' Contest organized by KPIT.}
-      \projectItem{The findings for this research were published in IJERT arXiv:1407.5212 (2014). doi: 10.5120/17586-8253 \textit{Aug. 14}}
+      \projectItem{The findings for this research were published in IJERT. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253 Aug. 14}
      \resumeItemListEnd
 
    \projectHeading{Road Bump Data Analysis using Automated Real Time Data Stream to Big Query}{Jun. 14 - Jul. 14} 
@@ -217,7 +216,7 @@
       {Among 120 competitors selected from 20 colleges.}\hfill \textit{Jul. 14}
     \resumeSubItem{Hackathon - 2nd Prize, Google Developers Group}
       {World Hackathon among 30 participating teams.}\hfill \textit{Oct. 14}
-    \resumeSubItem{Academic Scholarship}
+    \resumeSubItem{Academic Scholarship - State Government}
       {Funding one year of education for excellence in the field of Computer Science.} \hfill \textit{Jun. 11}
   \resumeSubHeadingListEnd
 
@@ -232,21 +231,22 @@
 \section{Leadership and Involvement}
   \resumeSubHeadingListStart
     
-    \projectHeading{Campus Ambassador \textbar{} JPMorgan Chase \& Co.}{Oct. 15 - Nov. 16}
+    \resumeSubheading{JPMorgan Chase \& Co.}{Campus Ambassador}{Oct. 15 - Nov. 16}
     \resumeItemListStart
     \projectItem{Part of the campus recruitment team, interacting with alma mater and ensuring high recruitment standards.}
     \projectItem{Delivered 3 sessions to 500 students for the recruitment drive of 2016.}
     \resumeItemListEnd
     
-    \projectHeading{Technical Judge and Subject Matter Expert \textbar{} JPMorgan Code for Good Hackathon}{Jul. 16 - Jul. 16}
+    \resumeSubheading{JPMorgan Code for Good Hackathon}{Technical Judge and Subject Matter Expert}{Jul. 16 - Jul. 16}
     \resumeItemListStart
     \projectItem{Provided technical expertise as a Subject Matter Expert for Git, Android, and AWS.}
     \projectItem{Evaluated 20 solutions based on technical prowess and implementation.}
     \resumeItemListEnd
     
-    \projectHeading{Event Planner and Technical Team \textbar{} Indian Society for Technical Education}{Jul. 12 - Jul. 14}
+    \resumeSubheading
+    {Indian Society for Technical Education}{Event Planner and Technical Team}{Jul. 12 - Jul. 14}
     \resumeItemListStart
-    \projectItem{Incharge of the Mobile and Web strategy. Built games like Virtual Stock Market Trading which garnered 20000 hits}
+    \projectItem{Incharge of the Mobile and Web strategy. Built games like Virtual Stock Market Trading which garnered 20000 hits.}
     \resumeItemListEnd
     
 	\resumeSubHeadingListEnd
