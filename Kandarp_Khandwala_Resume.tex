@@ -18,16 +18,15 @@
 % Pretty bulleting
 \usepackage{verbatim}
 \usepackage{enumitem}
-
 % Some standard packages
 \usepackage[hidelinks,pdfauthor={Kandarp Khandwala},pdftitle={Kandarp_Khandwala_Resume}]{hyperref}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{2.5in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.8in}
 
 \raggedbottom
 \raggedright
@@ -35,67 +34,32 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-11pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+	\vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 
 %-------------------------
 % Custom commands
-
-%%%%%%%% TODO %%%%%%%%
-% Clean up custom commands %
-%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\resumeItem}[2]{
-  \vspace{-0.5pt} \item\small{
-    \textbf{#1}{: #2}
-  }
-}
-
-\newcommand{\projectItem}[1]{
-  \item\small{#1}}
+%-------------------------
 
 
-\newcommand{\resumeSubheadingOld}[4]{
-	\vspace{1pt}
-  \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \large{\textbf{#1}} & \textit{\small #4} \\
-      \textit{\small#2} & \textit{\small#3} \\
+
+\newcommand{\projectHeading}[2]{
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \large{\textbf{#1}} & #2 
     \end{tabular*}
 }
 
-\newcommand{\resumeSubheading}[3]{
-	\item
-	\textbf{#2} \textbar{} \textbf{#1} \hfill \textit{#3}
-}
 
-\newcommand{\projectHeading}[2]{
-  \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \large{\textbf{#1}} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-1.5pt}
-}
-
-
-\newcommand{\resumeSubItem}[2]{
-	\vspace{2pt}\item
-	\textbf{#1}: {#2}
-}
-
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0pt}\setlength{\parskip}{-1pt}\setlength{\parsep}{0pt}}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{-1pt}\begin{itemize}[leftmargin=*]\setlength\itemsep{.5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=3pt, parsep=1pt, listparindent=0pt, itemindent=0pt, itemsep=0.5pt, leftmargin=*]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
-
+\renewcommand\labelitemi{$\cdot$}
 %-------------------------------------------
 \begin{document}
 
 \centerline{\LARGE{Kandarp Khandwala}}
-\centerline{\normalsize{Baltimore, MD \textbar{} \href{mailto:kandarp.k@jhu.edu}{kandarp.k@jhu.edu} \textbar{} +1 (443) 763-9251 \textbar{} \href{https://github.com/kandarpck}{Github: kandarpck} }}
+\centerline{\normalsize{Baltimore, MD \textbar{} \href{mailto:kck@jhu.edu}{kck@jhu.edu} \textbar{} +1 (443) 763-9251 \textbar{} \href{https://github.com/kandarpck}{Github: kandarpck} }}
 \centerline{\normalsize{\href{http://kandarpck.appspot.com/}{Website: kandarpck.appspot.com}  \textbar{} \href{https://www.linkedin.com/in/kandarpkhandwala}{LinkedIn: linkedin.com/in/kandarpkhandwala}}}
 
 %\centerline{\Large{Jane Doe}}
@@ -103,45 +67,47 @@
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-  \resumeSubheadingOld
-  {Masters in Computer Science \& Security \textbar{} Johns Hopkins University}
-  {Courses: Natural Language Processing, Advanced Cryptographic Systems, Blockchains and Cryptocurrencies.}{Aug. 17 - Dec 18 (expected)}{GPA: 3.81}
-    \resumeSubheadingOld
-      {Bachelors in Computer Engineering \textbar{} Mumbai University}
-      {Courses: Algorithms, Operating Systems, Data Mining, Advanced Computer Networks, Artificial Intelligence.}{Jul. 11 - May. 15}{GPA: 3.61}
-  \resumeSubHeadingListEnd
+  	\projectHeading{Masters in Computer Science \& Security \textbar{} Johns Hopkins University}{Aug. 17 - Dec. 18}
+	\begin{itemize}[nosep, leftmargin=*]
+		\item{\small Natural Language Processing, Advanced Cryptographic Systems, Blockchains and Cryptocurrencies. \hfill{} GPA: 3.81}
+   	\end{itemize}
+   \vspace{3pt}
+    \projectHeading
+      {Bachelors in Computer Engineering \textbar{} Mumbai University}{Jul. 11 - May. 15}
+      \begin{itemize}[nosep, leftmargin=*]
+      \item{\small Algorithms, Operating Systems, Data Mining, Advanced Computer Networks, Artificial Intelligence. \hfill{} GPA: 3.61}
+    \end{itemize}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
   
-      \projectHeading{Software Engineering Intern \textbar{} Verizon}
+    \projectHeading{Software Engineering Intern \textbar{} Verizon}
  	 {May. 18 - Aug. 18}
   	\resumeItemListStart
-  		\resumeItem{Drive Cleaner}
+  		\item\small{
+  			\textbf{Drive Cleaner: }}
   			{Developed the API Backend Microservice to calculate a score based on driving habits and car conditions. Provided tips to improve the score which helped the user in fuel and environmental savings.}
-  \resumeItemListEnd
+  	\resumeItemListEnd
   
   \projectHeading
 	  {Research Assistant \textbar{} Institute of Data Intensive Engineering and Science %\textbar{} \textit{\small \href{http://idies.jhu.edu}{idies.jhu.edu}}}\
 	}{Aug. 17 - May. 18}
   	\resumeItemListStart
-  		\resumeItem{Deep Learning}
+  		\item\small{\textbf{Deep Learning: }}
   			{Analyzed raw galaxy images, identified and accurately predicted the type of galaxy observed. Generated a realistic simulated universe and performed predictive analysis on the simulated data.}
   \resumeItemListEnd
   
   
     \projectHeading
-      {Software Engineer \textbar{} JPMorgan Chase Co. \textbar{} \textit{\small Credit Risk and Profit and Loss(PnL)}}
+      {Software Engineer \textbar{} JPMorgan Chase \& Co.}
      {Jul. 15 - Jun. 17}
       \resumeItemListStart
-%         \resumeItem{Batch Split}
+%         \item\small{\textbf{Batch Split}
 %          {Improved resiliency and performance of the End of Day(EOD) Fixed Income risk batch which reduced Priority 1 issues by 33\% and improved overall timing by one hour.}
-        \resumeItem{DevOps}
+        \item\small{\textbf{DevOps: }}
         {Lead the DevOps initiative in the team by bringing the support team up to speed using knowledge transfer sessions. \\
-        Identified pain points and built a dashboard tool unifying applications which increased productivity by 20\%}
-        \resumeItem{Secured Lending}
+        Identified pain points and built a dashboard tool unifying applications which increased productivity by 20\%} \vspace{2pt}
+        \item\small{\textbf{Secured Lending: }}
           {Interacted with traders and orchestrated the development of a comprehensive suite of five applications for high-value Lending and Collateral transactions, shortening the turnaround time from days to minutes.}
       \resumeItemListEnd
       
@@ -149,9 +115,9 @@
     \projectHeading{Summer Intern \textbar{} Avocation Education Services Pvt. Ltd.}
    {May. 15 - Jul. 15}
    \resumeItemListStart
-   		\resumeItem{Security and Optimization}
+   		\item\small{\textbf{Security and Optimization: }}
 %   		{Reduced the web application downtime by 50\% by optimizing the code and streamlining the infrastructure leading to a sustained 3x increase in web traffic over the year.}
-%   		\resumeItem{Server Hardening}
+%   		\item\small{\textbf{Server Hardening}
    		{Enhanced Web Security by adding API authentication, HTTPS, closing down on unrestricted ports, adding measures to protect against DDoS attacks and implementing Identity \& Access Management.}
    \resumeItemListEnd
 %   
@@ -160,7 +126,7 @@
 %    \projectHeading{Summer Intern \textbar{} Gray Routes}
 % 	{Jun. 14 - Aug 14}
 % 	\resumeItemListStart
-% 	\resumeItem{Intelligent Systems}
+% 	\item\small{\textbf{Intelligent Systems}
 % 	{Conceptualized innovative solutions for last-mile delivery and logistics by combining Location Services and Machine %	 Learning for efficient inventory management and optimized route prediction.}
 % 	\resumeItemListEnd
       
@@ -168,107 +134,89 @@
 %      {Stupidsid}
 %      {Developer Intern}{Summer 13 and 15}
 %     \resumeItemListStart
-%        \resumeItem{Application Scaling}
+%        \item\small{\textbf{Application Scaling}
 %          {Revamped the back-end application architecture and API services, leading to a sustained 3x increase in web traffic over the year while also slashing costs to half.}
-%       \resumeItem{Mobile First}
+%       \item\small{\textbf{Mobile First}
 %          {Pioneered the design and development of Android applications which empowered the startup to adopt a distinguished strategy and triumph over the competition.}
 %      \resumeItemListEnd
  
 %------------------------------------------------
     
-\resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
-\resumeSubHeadingListStart
-\small{\item{
-		{Python, Pandas, Django, \hfill{} Java, Spring, Android, Go, Unix, \hfill{} TensorFlow, Snort, \hfill{} AWS, GCP, \hfill{} Solr, \hfill{} Git, PostgreSQL, \LaTeX}
+\hspace*{5pt} \small{Python, Pandas, Django, \hfill{} Java, Spring, Android, Go, Unix, \hfill{} TensorFlow, Snort, \hfill{} AWS, GCP, \hfill{} Solr, \hfill{} Git, PostgreSQL, \LaTeX}
 		
-}}
-\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects and Publications}
-  \resumeSubHeadingListStart
-    
     
     \projectHeading{Decentralized Public Key Infrastructure using Ethereum Smart Contracts}{Jan. 18 - May. 18} 
     \resumeItemListStart
-    \projectItem{Developed a PKI with built-in certificate transparency to make it easy to detect rogue certificates for fine-grained identity management and trust.}
+     \item\small{Developed a PKI with built-in certificate transparency to make it easy to detect rogue certificates for fine-grained identity management and trust.}
     \resumeItemListEnd
     
     \projectHeading{Mini Projects}{Sep. 17 - May. 18} 
     \resumeItemListStart
-    	\projectItem{Simulate an attack on Bitcoin by developing a Miner with 51\% hash power to maximize profits.}
-    	\projectItem{Cryptographic Protocol Analysis of the Telegram encryption protocols.}
-    	\projectItem{Implemented the Vigenere, AES, RSA and Rabin Cryptosystems and launched Timing \& Padding Oracle attacks against them.}
-	    \projectItem{Thorough Analysis, Reporting of the top 10 OWASP vulnerabilities and demonstrating attacks and defenses against them.}
+    	 \item\small{Simulate an attack on Bitcoin by developing a Miner with 51\% hash power to maximize profits.}
+    	 \item\small{Cryptographic Protocol Analysis of the Telegram encryption protocols.}
+    	 \item\small{Implemented the Vigenere, AES, RSA and Rabin Cryptosystems and launched Timing \& Padding Oracle attacks against them.}
+	     \item\small{Thorough Analysis, Reporting of the top 10 OWASP vulnerabilities and demonstrating attacks and defenses against them.}
     \resumeItemListEnd
     
    \projectHeading{Personalized Search Engine and Mobile Assistant}{Aug. 14 - Mar. 15} 
     \resumeItemListStart
-      \projectItem{Programmed a small-scale search engine by extending Apache Solr, delivering high quality, efficient search results and context aware customized information based on the user's current likes and likelihood of future preferences.}
+       \item\small{Programmed a small-scale search engine by extending Apache Solr, delivering high quality, efficient search results and context aware customized information based on the user's current likes and likelihood of future preferences.}
      \resumeItemListEnd
    
    \projectHeading{Dynamic Context Aware Traffic System Optimization}{Jan. 14 - May. 14} 
     \resumeItemListStart
-      \projectItem{Proposed algorithmic changes after statistical analyses on vehicular traffic data leading to 15\% traffic efficiency improvement.}
-      \projectItem{Nominated as the best departmental project. Picked among top ten ideas from 600 national entries at 'All India Science and Engineering' Contest organized by KPIT.}
-      \projectItem{The findings for this research were published in IJERT. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253 Aug. 14}
+       \item\small{Proposed algorithmic changes after statistical analyses on vehicular traffic data leading to 15\% traffic efficiency improvement.}
+       \item\small{Nominated as the best departmental project. Picked among top ten ideas from 600 national entries at 'All India Science and Engineering' Contest organized by KPIT.}
+       \item\small{The findings for this research were published in IJERT. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253 Aug. 14}
      \resumeItemListEnd
 
-   \projectHeading{Road Bump Data Analysis using Automated Real Time Data Stream to Big Query}{Jun. 14 - Jul. 14} 
+   \projectHeading{Real Time Road Bump Data Analysis using Big Query}{Jun. 14 - Jul. 14} 
     \resumeItemListStart
-      \projectItem{Created a data pipeline processor that managed the entire ETL process on Road Bump data collected using mobile sensors delivering an optimized route to transport cheaply.}
+      \item\small{Created a continous data pipeline processor that managed the entire ETL process on streaming Road Bump data collected using mobile sensors delivering an optimized route to transport cheaply.}
      \resumeItemListEnd
    
-  \resumeSubHeadingListEnd
-
+ 
 %-----HONORS AND AWARDS-------
 \section{Honors and Awards}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Holiday Hack Challenge}
-  	  {Reached stage 4/5 of the Network Security yearly challenge.}\hfill \textit{Dec. 16}
-    \resumeSubItem{Top Thinker}
-      {Award for the 6 most impactful employees among 150 analysts joining JPMorgan.}\hfill \textit{Jul. 15}
-    \resumeSubItem{Hackathon - 1st Prize, JPMorgan} 
-      {Among 120 competitors selected from 20 colleges.}\hfill \textit{Jul. 14}
-    \resumeSubItem{Hackathon - 2nd Prize, Google Developers Group}
-      {World Hackathon among 30 participating teams.}\hfill \textit{Oct. 14}
-    \resumeSubItem{State Govt. Academic Scholarship}
-    {Funding 1 year of education for excellence in the field of Computer Sci.}\hfill \textit{Jun. 11}
-  \resumeSubHeadingListEnd
+  \resumeItemListStart
+    \item\small{\textbf{Holiday Hack Challenge: }}
+  	  {Reached stage 4/5 of the Network Security yearly challenge.}\hfill{} {Dec. 16}
+    \item\small{\textbf{Top Thinker: }}
+      {Award for the 6 most impactful employees among 150 analysts joining JPMorgan.}\hfill{} {Jul. 15}
+    \item\small{\textbf{Hackathon - 1st Prize, JPMorgan: }} 
+      {Among 120 competitors selected from 20 colleges.}\hfill{} {Jul. 14}
+    \item\small{\textbf{Hackathon - 2nd Prize, Google Developers Group: }}
+      {World Hackathon among 30 participating teams.}\hfill{} {Oct. 14}
+    \item\small{\textbf{State Govt. Academic Scholarship: }}
+    {Funding 1 year of education for excellence in the field of Computer Sci.}\hfill{} {Jun. 11}
+  \resumeItemListEnd
 
 %--------PUBLICATIONS------------
 %\section{Publications}
-%  \resumeSubHeadingListStart
+%  \resumeItemListStart
 %    \resumeSubItem{Context Aware Dynamic Traffic Signal Optimization.}
 %      {Khandwala K, Sharma R, and Rao S. arXiv:1407.5212 (2014). doi: 10.5120/17586-8253}\hfill \textit{Aug. 14}
-%  \resumeSubHeadingListEnd
+%  \resumeItemListEnd
 
 %--------LEADERSHIP------------
 \section{Leadership and Involvement}
-  \resumeSubHeadingListStart
     
-    \resumeSubheading{JPMorgan Chase \& Co.}{Campus Ambassador}{Oct. 15 - Nov. 16}
+    \projectHeading{Campus Ambassador, Technical Judge and SME \textbar{} JPMorgan}{Oct. 15 - Nov. 16}
     \resumeItemListStart
-    \projectItem{Part of the campus recruitment team, interacting with alma mater and ensuring high recruitment standards.}
-    \projectItem{Delivered 3 sessions to 500 students for the recruitment drive of 2016.}
+    	\item\small{Provided subject matter expertise and conducted training sessions on Git, Android, and AWS for 500 students.}
     \resumeItemListEnd
     
-    \resumeSubheading{JPMorgan Code for Good Hackathon}{Technical Judge and Subject Matter Expert}{Jul. 16 - Jul. 16}
+    \projectHeading{Event Planner and Technical Lead \textbar{} Indian Society for Technical Education }{Jul. 12 - Jul. 14}
     \resumeItemListStart
-    \projectItem{Provided technical expertise as a Subject Matter Expert for Git, Android, and AWS.}
+    	\item\small{Incharge of the Mobile and Web strategy. Built games like Virtual Stock Market Trading which garnered 20000 hits.}
     \resumeItemListEnd
     
-    \resumeSubheading
-    {Indian Society for Technical Education}{Event Planner and Technical Team}{Jul. 12 - Jul. 14}
-    \resumeItemListStart
-    \projectItem{Incharge of the Mobile and Web strategy. Built games like Virtual Stock Market Trading which garnered 20000 hits.}
-    \resumeItemListEnd
-    
-	\resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
